@@ -29,7 +29,7 @@ public class BlindMaze {
 
     private String[] spaces = {"   ", "^v^", "777", "x-x"};
     // 777 is a wheel that gives a random chance of getting these:
-    // teleport to random spot, inverted controls, minigame?
+    // teleport to random spot, inverted controls but dont say directly, trivia minigame?
     // seeing whole maze for a few sec, move 2 spaces, bomb to break walls but can destroy items too, know which direction exit is
 
     public BlindMaze(int r, int c) {
