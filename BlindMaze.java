@@ -59,7 +59,7 @@ public class BlindMaze {
     }
 
     public void move(String input) {
-        if(input == "right") {
+        if(input.equals("right")) {
             if(rightAvail()) {
                 maze[currentRow][currentCol] = "   ";
                 maze[currentRow][currentCol+1] = "0-0";

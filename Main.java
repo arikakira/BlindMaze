@@ -17,6 +17,7 @@ public class Main {
         if(game.leftAvail()) System.out.print("left  ");
         if(game.upAvail()) System.out.print("up  ");
         if(game.downAvail()) System.out.print("down  ");
+        
         System.out.print("\n" + "Enter a direction: ");
         String userInput = scn.nextLine();
         System.out.println(userInput);
