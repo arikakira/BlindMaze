@@ -4,8 +4,6 @@ public class BlindMaze {
     private String wall = "XXX";
     private String emptySpace = "   ";
     private String wheel = " 7 ";
-    private String start = " 0 ";
-    private String end = " W ";
     private int endRow = 13;
     private int endCol = 5;
     //private String eye = "";
@@ -28,6 +26,11 @@ public class BlindMaze {
         {"XXX","   ","   ","XXX","XXX","^v^","XXX","   ","XXX","   ","XXX","   ","   ","   ","XXX"},
         {"XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX","XXX"}
     };
+
+    private String[] spaces = {"   ", "^v^", "777", "x-x"};
+    // 777 is a wheel that gives a random chance of getting these:
+    // teleport to random spot, inverted controls, minigame?
+    // seeing whole maze for a few sec, move 2 spaces, bomb to break walls but can destroy items too, know which direction exit is
 
     public BlindMaze(int r, int c) {
         maze[r][c] = "0-0";
@@ -109,6 +112,7 @@ public class BlindMaze {
                 return false;
             }
         }
+        System.out.println("That's not even a direction??");
         return false;
     }
 }
